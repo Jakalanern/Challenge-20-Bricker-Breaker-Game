@@ -1,5 +1,5 @@
 # Challenge-20-Bricker-Breaker-Game
-Really fun! I followed a tutorial for this but made sure I understood how everything works. It was my first time using canvas and I learned a lot.
+Really fun challenge! I followed a tutorial for this but made sure I understood how everything works. It was my first time using canvas and I learned a lot.
 
 I implemented a lot of features myself without guidance such as the **pause system**, **pause screen**, **sounds**, **sound toggle system with button control**, **win/loss conditions**, **score counter**, **life counter**, **DARK / LIGHT themes with button control**, **game difficuly**, etc...
 
