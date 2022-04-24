@@ -8,6 +8,7 @@ const modeBtn = $(".mode-button");
 const musicBtn = $(".music-button");
 const body = $("body");
 const pause = $(".pause");
+const pause2 = $(".pause2");
 const hearts = $$(".heart");
 
 let allHearts = [];
@@ -16,6 +17,7 @@ hearts.forEach(function (heart) {
   allHearts.push(heart);
 });
 
+let pauseButton = "ESC";
 let lives = 3;
 let dark = true;
 let score = 0;
@@ -30,8 +32,8 @@ let pauseCount = 0;
 
 let x = canvas.width / 2;
 let y = canvas.height - 30;
-let startingBallSpeed = 1.25; // Default: 1.25
-let maxBallSpeed = startingBallSpeed * 2.5; // DEFAULT: 2.5;
+let startingBallSpeed = 2; // Default: 1.25
+let maxBallSpeed = startingBallSpeed * 2.25; // DEFAULT: 2.5;
 let dx = startingBallSpeed;
 let dy = -startingBallSpeed;
 let ballRadius = 10; // Default: 10
@@ -79,7 +81,6 @@ let isGameOverSound = new Audio("./sounds/lose3.wav");
 let winSound = new Audio("./sounds/win-song.wav");
 
 function playBounceSound() {
-  console.log("BOUNCE SOUND");
   bounceSound.load();
   bounceSound.volume = bounceVolume;
 
@@ -87,21 +88,18 @@ function playBounceSound() {
 }
 
 function playStartSound() {
-  console.log("START SOUND");
   startSound.load();
   startSound.volume = startVolume;
   startSound.play();
 }
 
 function playHitSound() {
-  console.log("HIT SOUND");
   hitSound.load();
   hitSound.volume = hitVolume;
   hitSound.play();
 }
 
 function playBGMusic() {
-  console.log("BACKGROUND MUSIC START");
   bgMusic.volume = musicVolume;
   bgMusic.load();
   bgMusic.play();
@@ -110,50 +108,33 @@ function playBGMusic() {
 }
 
 function playDamageSound() {
-  console.log("DAMAGE SOUND");
   damageSound.load();
   damageSound.volume = damageVolume;
   damageSound.play();
 }
 
 function playWallSound() {
-  console.log("WALL SOUND");
   wallSound.load();
   wallSound.volume = wallVolume;
   wallSound.play();
 }
 
 function playGameOverSound() {
-  console.log("GAME OVER SOUND");
   isGameOverSound.load();
   isGameOverSound.volume = isGameOverVolume;
   isGameOverSound.play();
 }
 
 function playWinSound() {
-  console.log("GAME OVER SOUND");
   winSound.load();
   winSound.volume = winVolume;
   winSound.play();
 }
 
-function gameOver() {
-  isGameOver = true;
-  playGameOverSound();
-  pause.style.opacity = 1;
-  pause.innerHTML = "GAME OVER!!";
-}
-
-function gameWon() {
-  isGameWon = true;
-  playWinSound();
-  pause.style.opacity = 1;
-  pause.innerHTML = "YOU WIN!!";
-}
-
 let brickCount = brickColumnCount * brickRowCount;
 
 pause.innerHTML = "Press esc key to start!";
+pause2.style.opacity = 0;
 
 function drawBall() {
   ctx.beginPath();
@@ -227,6 +208,24 @@ function sleep(milliseconds) {
 function updateScore() {
   // lifeScore.innerHTML = lives;
   brickScore.innerHTML = brickCount;
+}
+
+function gameOver() {
+  isGameOver = true;
+  playGameOverSound();
+  pause.style.opacity = 1;
+  pause.innerHTML = "YOU LOST!";
+  pause2.style.opacity = 1;
+  pause2.innerHTML = `Press ${pauseButton} to try again...`;
+}
+
+function gameWon() {
+  isGameWon = true;
+  playWinSound();
+  pause.style.opacity = 1;
+  pause.innerHTML = "YOU WIN!";
+  pause2.style.opacity = 1;
+  pause2.innerHTML = `Press ${pauseButton} to play again!`;
 }
 
 function draw() {
