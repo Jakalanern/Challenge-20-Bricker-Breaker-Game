@@ -35,7 +35,12 @@ ESC to pause
 
 Click sun / moon icon to change theme
 
+**UPDATE**
 
+Added game sounds!
 
+Added hearts for lives, background music, and win/loss screens!
+
+Added mobile media queries to show its desktop only.
 
 
