@@ -9,3 +9,10 @@ WASD / Arrow Key controls
 Mouse control is in the code but commented out for now - prefer the key controls
 Pause / Resume game pressing esc
 
+**Gameplay: **
+Ball speeds up everytime you bounce it
+You have 3 lives
+If you lose a life, speed gets reset
+Once you destroy all bricks you win!
+
+
