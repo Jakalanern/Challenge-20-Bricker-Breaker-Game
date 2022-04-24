@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --clr-black: rgba(0, 0, 0, 0.815);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.display {
+  display: flex;
+  gap: 2em;
+}
+
+.canvas {
+  display: flex;
+  background: white;
+  color: black;
+}
+
+.pause {
+  margin-bottom: 2em;
+}
+
+h3 {
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.mode-button {
+  background: transparent;
+  width: 33px;
+  height: 33px;
+  margin-top: 4em;
+  cursor: pointer;
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+.dark {
+  background: black;
+  color: white;
+}
