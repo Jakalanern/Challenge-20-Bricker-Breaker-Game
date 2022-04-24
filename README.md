@@ -1,6 +1,16 @@
 # Challenge-20-Bricker-Breaker-Game
 Really fun! I followed a tutorial for this but made sure I understood how everything works. It was my first time using canvas and I learned a lot.
 
+**Gameplay:**
+
+Ball speeds up everytime you bounce it
+
+You have 3 lives
+
+If you lose a life, speed gets reset
+
+Once you destroy all bricks you win!
+
 **Features:**
 
 Light / Dark Modes!
@@ -15,15 +25,15 @@ Mouse control is in the code but commented out for now - prefer the key controls
 
 Pause / Resume game pressing esc
 
-**Gameplay:**
+**Controls**
 
-Ball speeds up everytime you bounce it
+WASD or Keys to Move
 
-You have 3 lives
+ESC to pause
 
-If you lose a life, speed gets reset
+Click sun / moon icon to change theme
 
-Once you destroy all bricks you win!
+
 
 
 
