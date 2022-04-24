@@ -39,8 +39,12 @@ Click sun / moon icon to change theme
 
 Added game sounds!
 
-Added hearts for lives, background music, and win/loss screens!
+Added a toggle ON/OFF for all game sounds
 
-Added mobile media queries to show its desktop only.
+Added hearts for lives, background music, and win/loss screens
+
+Added ability to restart after win or loss
+
+Added mobile media queries to alert its desktop only
 
 
