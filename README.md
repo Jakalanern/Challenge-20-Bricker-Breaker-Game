@@ -1,6 +1,8 @@
 # Challenge-20-Bricker-Breaker-Game
 Really fun! I followed a tutorial for this but made sure I understood how everything works. It was my first time using canvas and I learned a lot.
 
+I implemented a lot of features myself without guidance such as the score counter, life counter, pause system, pause screen, and DARK / LIGHT themes with button control.
+
 **Gameplay:**
 
 Ball speeds up everytime you bounce it
