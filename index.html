@@ -13,13 +13,21 @@
   <body>
     <h1 class="pause">Press esc key to start!</h1>
     <div class="display">
-      <h3>Lives: <span class="lives"></span></h3>
+      <div class="hearts">
+        <img src="icons/heart-white.png" class="lives heart heart1"></img>
+        <img src="icons/heart-white.png" class="lives heart heart2"></img>
+        <img src="icons/heart-white.png" class="lives heart heart3"></img>
+      </div>
       <h3>Bricks: <span class="bricks"></span></h3>
     </div>
     <canvas class="canvas" width="480" height="320">
       <span>Press any key to start...</span>
     </canvas>
-    <img class="mode-button" src="icons/sun-white.png" alt="" />
+    <div class="buttons">
+      <img class="mode-button button" src="icons/sun-white.png" alt="" />
+      <img class="music-button button" src="icons/sound-off-white.png" alt="" />
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
