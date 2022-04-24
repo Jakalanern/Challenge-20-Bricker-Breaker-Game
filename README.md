@@ -15,7 +15,7 @@ Mouse control is in the code but commented out for now - prefer the key controls
 
 Pause / Resume game pressing esc
 
-Gameplay:
+**Gameplay:**
 
 Ball speeds up everytime you bounce it
 
