@@ -102,7 +102,6 @@ function playHitSound() {
 function playBGMusic() {
   bgMusic.volume = musicVolume;
   bgMusic.load();
-  bgMusic.play();
   bgMusic.loop = true;
   soundsEnabled = true;
 }
